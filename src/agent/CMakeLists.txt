@@ -70,7 +70,7 @@ target_link_libraries (
     ${target_name}
     PRIVATE aziotsharedutil
             IotHubClient::iothub_client
-            iothub_client_mqtt_transport
+            iothub_client_mqtt_ws_transport
             umqtt
             aduc::adu_core_interface
             aduc::agent_workflow
@@ -80,6 +80,7 @@ target_link_libraries (
             aduc::device_info_interface
             aduc::eis_utils
             aduc::extension_manager
+            aduc::https_proxy_utils
             aduc::logging
             aduc::permission_utils
             aduc::pnp_helper
